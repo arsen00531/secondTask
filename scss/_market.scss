@@ -1,0 +1,16 @@
+.market {
+
+    .market__container {
+        @include container();
+        display: grid;
+        grid-template-columns: repeat(2, minmax(150px, 1fr));
+        gap: 15px;
+
+        .market__item {
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

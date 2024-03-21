@@ -1,0 +1,23 @@
+@media (max-width: 768px) {
+    .make {
+
+        .make__text {
+            width: 90%;
+
+            h2 {
+                font-size: 30px;
+            }
+        }
+
+        .make__container {
+            display: block;
+        }
+    }
+
+    .market {
+
+        .market__container {
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        }
+    }
+}

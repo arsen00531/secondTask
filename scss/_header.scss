@@ -1,0 +1,28 @@
+.header {
+    border-bottom: 2px solid $lightGray;
+    margin-bottom: 100px;
+
+    .header__container {
+        @include container;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+
+        ul {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            width: 40%;
+        }
+
+        .header__show {
+            
+            a {
+                margin-right: 30px;
+            }
+        }
+    }
+}

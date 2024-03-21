@@ -1,0 +1,59 @@
+.make {
+    margin-top: 100px;
+
+    .make__text {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 60px;
+
+        h2 {
+            margin-bottom: 20px;
+
+            &:first-child {
+                color: $gray;
+            }
+        }
+    }
+
+    .make__container {
+        @include container;
+        display: grid;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas: 
+            'grid1 grid1 grid1 grid1 grid2 grid2 grid2'
+            'grid3 grid3 grid3 grid4 grid4 grid4 grid4'
+            'grid5 grid5 grid5 grid5 grid6 grid6 grid6'
+        ;
+
+        .make__item {
+            margin-bottom: 50px;
+
+            img {
+                width: 100%;
+            }
+
+            @for $i from 1 to 7 {
+                &:nth-child(#{$i}) {
+                    grid-area: grid#{$i};
+                }
+                @if ($i == 1) or ($i == 4) or ($i == 5) {
+                    // grid-area: ;
+                }
+            }
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+                margin-bottom: 30px;
+            }
+
+            h4 {
+                color: $gray;
+            }
+        }
+    }
+}
