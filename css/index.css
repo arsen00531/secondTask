@@ -179,6 +179,10 @@ a {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
+.footer .footer__container .footer__logo {
+  margin-left: 60px;
+  margin-bottom: 20px;
+}
 .footer .footer__container .footer__text {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -188,6 +192,12 @@ a {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+.footer .footer__container .footer__text div {
+  margin-right: 40px;
+}
+.footer .footer__container .footer__text div:last-child p {
+  width: 40%;
 }
 .footer .footer__container .footer__text p {
   font-size: 20px;

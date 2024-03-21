@@ -11,10 +11,25 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
+        .footer__logo {
+            margin-left: 60px;
+            margin-bottom: 20px;
+        }
+
         .footer__text {
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+
+            div {
+                margin-right: 40px;
+
+                &:last-child {
+                    p {
+                        width: 40%;
+                    }
+                }
+            }
 
             p {
                 font-size: 20px;
