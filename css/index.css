@@ -70,7 +70,19 @@ a {
   width: 40%;
 }
 .header .header__container .header__show a {
-  margin-right: 30px;
+  margin-right: 40px;
+}
+.header .header__container .header__show button {
+  display: block;
+  padding: 10px;
+  border: 1px solid #1A1A1A;
+  border-radius: 5px;
+  color: #1A1A1A;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
 }
 
 .market .market__container {

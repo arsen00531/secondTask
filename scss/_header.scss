@@ -21,7 +21,11 @@
         .header__show {
             
             a {
-                margin-right: 30px;
+                margin-right: 40px;
+            }
+
+            button {
+                @include button();
             }
         }
     }
